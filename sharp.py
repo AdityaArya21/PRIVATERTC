@@ -72,7 +72,7 @@ async def genkey(update: Update, context: CallbackContext):
         if user_id in ADMIN_IDS:
             await context.bot.send_message(user_id, "/genkey 30 days/n COPY PASTE THIS FOR GENKEY")
         else:
-            await context.bot.send_message(user_id, "ONLY OWNER CAN USE💀OWNER @SharpX72")
+            await context.bot.send_message(user_id, "ONLY OWNER CAN USE")
     else:  # Handle the command case
         command = context.args
         user_id = str(update.message.from_user.id)
@@ -97,7 +97,7 @@ async def genkey(update: Update, context: CallbackContext):
             else:
                 response = "Usage: /genkey <amount> <hours/days>"
         else:
-            response = "ONLY OWNER CAN USE💀OWNER @SharpX72"
+            response = "ONLY OWNER CAN USE"
 
         await update.message.reply_text(response)
 
@@ -345,9 +345,9 @@ def main():
     application.run_polling()
 
 # Bot token and user/channel details
-BOT_TOKEN = '6096723928:AAHUu_AeJ-PUV10ebxXCmTFggo0SEbvQyqQ'
-CHANNEL_USERNAME = 'SHARPCRACKS'
-ADMIN_IDS = ['1009132250']  # Admin user IDs
+BOT_TOKEN = '7594945901:AAHooMxuOs_LOFe-iOfsrV606yUjpmVBesU'
+CHANNEL_USERNAME = 'RTC_CHEATS'
+ADMIN_IDS = ['5912395178']  # Admin user IDs
 
 if __name__ == '__main__':
     main()
