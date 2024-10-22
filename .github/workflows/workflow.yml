@@ -25,6 +25,7 @@ jobs:
           pip3 install telebot
           pip3 install flask
           pip install aiogram
+          pip install python-telegram-bot
           pip install pyTelegramBotAPI
           chmod +x *
           # Add any required dependencies here if needed, e.g.:
